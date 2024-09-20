@@ -21,5 +21,3 @@ variable "inbound_ports" {
     cidr_blocks = optional(list(string), ["0.0.0.0/0"])
   }))
 }
-
-

@@ -36,7 +36,7 @@ resource "aws_route_table" "public_rtb" {
 }
 
 # 서브넷과 라우팅 테이블 연결
-resource "aws_route_table_association" "public_rtbasso" {
+resource "aws_route_table_association" "public_rtb_asso" {
   route_table_id = aws_route_table.public_rtb.id
   subnet_id = aws_subnet.public_subnet.id
 }
